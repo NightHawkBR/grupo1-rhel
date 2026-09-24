@@ -1,0 +1,40 @@
+% Capa e folha de rosto (ABNT NBR 14724). Gerado a partir dos metadados de pesquisa.md.
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+{\bfseries\MakeUppercase{$instituicao$}\par}
+\vspace{0.3cm}
+{\MakeUppercase{$curso$}\par}
+\vspace{2.2cm}
+$for(author)$
+{\MakeUppercase{$author$}\par}
+$endfor$
+\vfill
+{\bfseries\MakeUppercase{$title$}\par}
+\vfill
+{$local$\par}
+{$date$\par}
+\end{titlepage}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+$for(author)$
+{\MakeUppercase{$author$}\par}
+$endfor$
+\vspace{4cm}
+{\bfseries\MakeUppercase{$title$}\par}
+\vspace{2.5cm}
+\hfill\begin{minipage}{0.55\textwidth}
+\singlespacing\small
+Trabalho apresentado à disciplina de Sistemas Operacionais Linux do curso de $curso$ da $instituicao$, turma $turma$, como requisito do $subtitle$.
+
+\vspace{0.4cm}
+Professor: $professor$
+\end{minipage}
+\vfill
+{$local$\par}
+{$date$\par}
+\end{titlepage}
+% A contagem começa na folha de rosto (1); o Resumo é a página 2.
+\setcounter{page}{2}

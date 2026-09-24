@@ -1,0 +1,35 @@
+% Formatação ABNT (NBR 14724): A4, margens 3/3/2/2 cm, fonte 12, entrelinha 1,5, recuo 1,25 cm.
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{needspace}
+\usepackage{xurl}
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\renewcommand{\maketitle}{}
+% Títulos: todos em 12 pt; seção primária em maiúsculas e negrito.
+\titleformat{\section}{\normalfont\normalsize\bfseries}{\thesection}{0.6em}{\MakeUppercase}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\itshape}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{18pt}{12pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+% Legendas: numeração escrita no próprio texto ("Figura 1 — ...").
+\usepackage{caption}
+\captionsetup{labelformat=empty,font=small,justification=raggedright,singlelinecheck=false,skip=4pt}
+% Tabelas e código em fonte menor e espaçamento simples.
+\AtBeginEnvironment{longtable}{\small\setstretch{1.05}}
+\AtBeginEnvironment{Shaded}{\setstretch{1.0}}
+\usepackage{fancyvrb}
+\AtBeginDocument{\ifcsname Highlighting\endcsname\RecustomVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\small}\fi}
+% Numeração de página no canto superior direito, a partir da Introdução.
+\fancypagestyle{abnt}{\fancyhf{}\fancyhead[R]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+\pagestyle{empty}
+% Sumário com pontilhado também nas seções primárias.
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cfttoctitlefont}{\hspace*{\fill}\normalsize\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
