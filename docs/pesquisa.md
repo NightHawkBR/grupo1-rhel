@@ -2,9 +2,10 @@
 title: "Red Hat Enterprise Linux em ambiente corporativo: modelo de subscrição, ciclo de vida de dez anos e gestão de risco com o Red Hat Lightspeed (antigo Insights)"
 subtitle: "CP02 — Ambiente Linux · Sistemas Operacionais Linux"
 author:
-  - "Matheus Silva — RM [preencher]"
-  - "[Nome do integrante] — RM [preencher]"
-professor: "[nome do professor]"
+  - "Matheus Silva — RM 572335"
+  - "Davi Almeida — RM 569447"
+  - "Gabriel de Oliveira — RM 569695"
+professor: "Fábio Pires"
 turma: "1TDCPF"
 instituicao: "FIAP — Faculdade de Informática e Administração Paulista"
 curso: "Tecnologia em Cibersegurança"
@@ -256,7 +257,7 @@ Os três casos a seguir são o resultado mais importante do laboratório. Cada u
 **a) O `noexec` em `/var/tmp` quebraria o gerenciador de pacotes.**
 
 - *Hipótese:* guias de hardening avisam que scripts de instalação de pacotes usam `/var/tmp` e falhariam com `noexec`.
-- *Teste:* um `dnf reinstall bash` com `noexec` ativo em `/var/tmp` (evidência: `06c-dnf-com-noexec.txt`). O pacote executa *scriptlets* na instalação e na limpeza, exatamente o tipo de operação que o aviso descreve.
+- *Teste:* com `noexec` já ativo em `/tmp` e `/var/tmp`, o `dnf update` de 147 pacotes (com *scriptlets* de `glibc`, `selinux-policy`, `crypto-policies` e `firewalld`) e depois um `dnf reinstall bash`, capturado como evidência (`06c-dnf-com-noexec.txt`). O update está registrado no `INSTALL.md`, seções 6 e 7.
 - *Resultado:* nenhuma falha.
 - *Decisão:* manter o `noexec`, com o procedimento de remontagem temporária documentado como contingência.
 

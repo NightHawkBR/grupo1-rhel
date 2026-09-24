@@ -366,6 +366,8 @@ $ sudo dnf -y update
 
 No laboratório o `update` trouxe **147 pacotes** — incluindo `kernel`, `glibc`, `selinux-policy`, `crypto-policies` e `firewalld` — e importou as **três chaves GPG** da Red Hat de `/etc/pki/rpm-gpg/`, usadas para conferir a assinatura de cada pacote.
 
+> **Ordem real no laboratório:** o `update` de 147 pacotes foi executado **depois** das opções de montagem da seção 7, com `noexec` já ativo em `/tmp` e `/var/tmp`. Por isso ele também serve de teste do Checkpoint 5. Numa instalação nova, a ordem desta seção funciona do mesmo jeito.
+
 Veio kernel novo → reinicie e confira:
 
 ```bash
