@@ -1,0 +1,4 @@
+*.img
+*.key
+luks-backup/
+docs/build/
