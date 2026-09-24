@@ -1,0 +1,5 @@
+active
+kdump: Kdump is operational
+kdump: Notice: No vmcore creation test performed!
+kdump: Reserved 256MB memory for crash kernel
+crashkernel=2G-64G:256M,64G-:512M

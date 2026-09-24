@@ -1,0 +1,5 @@
++-------------------------------------------+
+   Detalhes de Status de Sistema
++-------------------------------------------+
+Overall Status: Registered
+

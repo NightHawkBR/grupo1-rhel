@@ -1,0 +1,1 @@
+ssh_port_t                     tcp      6969, 22

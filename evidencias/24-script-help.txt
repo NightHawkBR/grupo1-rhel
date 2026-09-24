@@ -1,0 +1,29 @@
+ssh-audit-harden.sh v1.1.0 - Auditoria e hardening do OpenSSH (Grupo 1 - RHEL)
+
+USO:
+    ssh-audit-harden.sh --audit
+    ssh-audit-harden.sh --apply [-g GRUPO] [-p PORTA]
+    ssh-audit-harden.sh --rollback
+    ssh-audit-harden.sh -h | --help
+
+MODOS:
+    -a, --audit         Somente le e compara. Nao altera nada.
+    -A, --apply         Aplica a baseline no drop-in /etc/ssh/sshd_config.d/01-hardening-grupo1.conf.
+    -r, --rollback      Restaura o ultimo backup criado por --apply.
+
+OPCOES:
+    -g, --grupo GRUPO   Grupo usado em AllowGroups (padrao: ssh-admins).
+    -p, --porta PORTA   Define a porta do sshd. Exige rotulo SELinux e regra de
+                        firewalld ja existentes; caso contrario o script recusa.
+                        Sem esta opcao, a porta atual e preservada.
+    -h, --help          Exibe esta ajuda.
+    -V, --version       Exibe a versao.
+
+CODIGOS DE SAIDA:
+    0 sucesso | 1 achado | 2 erro de uso | 3 dependencia/ambiente
+
+EXEMPLOS (o script e 0750 root:root; use sudo e o caminho completo):
+    sudo /usr/local/sbin/ssh-audit-harden.sh --audit
+    sudo /usr/local/sbin/ssh-audit-harden.sh --apply --porta 6969
+    sudo /usr/local/sbin/ssh-audit-harden.sh --rollback
+ssh-audit-harden.sh v1.1.0

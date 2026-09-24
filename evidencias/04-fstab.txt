@@ -1,0 +1,21 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Thu Sep 17 03:10:54 2026
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+UUID=2a48d197-77d6-4767-a3cb-fc8ebfdb45f5 /                       xfs     defaults,x-systemd.device-timeout=0 0 0
+UUID=ff84325e-1a43-475d-8fd8-e542e276a515 /boot                   xfs     defaults,nodev,nosuid        0 0
+UUID=9FBC-E58C          /boot/efi               vfat    umask=0077,shortname=winnt 0 2
+UUID=2619b941-1a4f-4a0a-8feb-ced272c260dd /home                   xfs     defaults,nodev,nosuid,x-systemd.device-timeout=0 0 0
+UUID=e4003952-fa7e-437a-9bc7-8e5d48f29ca4 /tmp                    xfs     defaults,nodev,nosuid,noexec,x-systemd.device-timeout=0 0 0
+UUID=5067bf05-474d-484b-bef4-6cbfd006dd38 /var                    xfs     defaults,nodev,x-systemd.device-timeout=0 0 0
+UUID=2146c164-3aff-4d87-affa-15c97eda8c1a /var/log                xfs     defaults,nodev,nosuid,noexec,x-systemd.device-timeout=0 0 0
+UUID=7da33ab8-6ee3-431a-8ec8-9eb99097a36b /var/tmp                xfs     defaults,nodev,nosuid,noexec,x-systemd.device-timeout=0 0 0
+UUID=619db4a6-2e52-4af7-9485-d907e9412409 none                    swap    defaults,x-systemd.device-timeout=0 0 0
+/dev/mapper/vg_sistema-lv_dados /srv/dados xfs defaults,nodev,nosuid,nofail 0 0

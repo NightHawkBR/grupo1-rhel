@@ -1,0 +1,16 @@
+POLITICA DE CRIPTOGRAFIA DO SISTEMA
+
+1. NO-SHA1 nao existe no RHEL 10 (SHA-1 em assinaturas ja vem desabilitado na politica DEFAULT - ver 12-journal-ssh.txt).
+2. Testamos FUTURE: o servidor passou a oferecer APENAS troca de chaves hibrida pos-quantica (mlkem768x25519-sha256, mlkem768nistp256-sha256,
+mlkem1024nistp384-sha384). O cliente OpenSSH do Windows nao implementa ML-KEM e a negociacao falhou: "no matching key exchange method found".
+3. DECISAO: manter DEFAULT. O DEFAULT do RHEL 10 ja oferece ML-KEM hibrido a clientes capazes, sem quebrar os demais. FUTURE seria aplicavel em
+parque homogeneo com clientes atualizados.
+4 NEGOCIACAO REAL (ssh -vv, cliente OpenSSH/Windows, politica DEFAULT):
+  kex: algorithm: curve25519-sha256
+  kex: host key algorithm: ssh-ed25519
+  kex: cipher: chacha20-poly1305@openssh.com
+  O servidor ofereceu ML-KEM; o cliente nao implementa e a negociacao caiu no melhor algoritmo classico comum. Confirama que DEFAULT entrega troca de chaves
+  pos-quantica a clientes capazes sem excluir os demais.
+
+5 LIMITE CONHECIDO: a protecao pos-quantica cobre a TROCA DE CHAVES (sigilo da sessao). A AUTENTICACAO continua classica (ssh-ed25519).
+  Assinatura pos-quantica padronizada (ML-DSA) ainda nao esta disponivel no OpenSSH em producao.

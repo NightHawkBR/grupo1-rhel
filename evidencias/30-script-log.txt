@@ -1,0 +1,40 @@
+2026-09-20 20:48:19 [INFO] Configuracao efetiva lida com sshd -T.
+2026-09-20 20:48:19 [INFO] Auditoria concluida: nenhum achado.
+2026-09-20 20:48:21 [INFO] Backup criado em /var/backups/ssh-audit-harden/20260920-204820
+2026-09-20 20:48:21 [INFO] Drop-in gravado em /etc/ssh/sshd_config.d/01-hardening-grupo1.conf
+2026-09-20 20:48:21 [INFO] sshd -t aprovou a configuracao.
+2026-09-20 20:48:21 [INFO] sshd recarregado. Sessoes abertas nao foram derrubadas.
+2026-09-20 20:48:21 [WARN] Valide o acesso em uma SEGUNDA sessao antes de fechar esta.
+2026-09-20 20:48:56 [INFO] Dependencias verificadas: 10 binarios presentes.
+2026-09-20 20:48:56 [INFO] Iniciando ssh-audit-harden.sh v1.0.0 no modo apply.
+2026-09-20 20:48:56 [INFO] Configuracao efetiva lida com sshd -T.
+2026-09-20 20:48:57 [INFO] Auditoria concluida: nenhum achado.
+2026-09-20 20:48:57 [INFO] Configuracao ja esta na baseline. Nada a fazer (idempotente).
+2026-09-20 20:56:56 [INFO] Dependencias verificadas: 10 binarios presentes.
+2026-09-20 20:56:56 [INFO] Iniciando ssh-audit-harden.sh v1.0.0 no modo audit.
+2026-09-20 20:56:56 [INFO] Configuracao efetiva lida com sshd -T.
+2026-09-20 20:56:56 [INFO] Auditoria concluida: nenhum achado.
+2026-09-20 20:58:31 [INFO] Dependencias verificadas: 10 binarios presentes.
+2026-09-20 20:58:31 [INFO] Iniciando ssh-audit-harden.sh v1.0.0 no modo rollback.
+2026-09-20 20:58:31 [INFO] Backup 20260920-204820 restaurado.
+2026-09-20 20:58:31 [INFO] sshd -t aprovou a configuracao.
+2026-09-20 20:58:32 [INFO] sshd recarregado. Sessoes abertas nao foram derrubadas.
+2026-09-20 20:59:09 [INFO] Dependencias verificadas: 10 binarios presentes.
+2026-09-20 20:59:09 [INFO] Iniciando ssh-audit-harden.sh v1.0.0 no modo audit.
+2026-09-20 20:59:09 [INFO] Configuracao efetiva lida com sshd -T.
+2026-09-20 20:59:09 [INFO] Auditoria concluida: nenhum achado.
+2026-09-20 21:00:12 [INFO] Dependencias verificadas: 10 binarios presentes.
+2026-09-20 21:00:12 [INFO] Iniciando ssh-audit-harden.sh v1.0.0 no modo apply.
+2026-09-20 21:00:12 [INFO] Configuracao efetiva lida com sshd -T.
+2026-09-20 21:00:12 [INFO] Auditoria concluida: nenhum achado.
+2026-09-20 21:00:13 [INFO] Backup criado em /var/backups/ssh-audit-harden/20260920-210013
+2026-09-20 21:00:13 [INFO] Drop-in gravado em /etc/ssh/sshd_config.d/01-hardening-grupo1.conf
+2026-09-20 21:00:13 [INFO] sshd -t aprovou a configuracao.
+2026-09-20 21:00:13 [INFO] sshd recarregado. Sessoes abertas nao foram derrubadas.
+2026-09-20 21:00:13 [WARN] Valide o acesso em uma SEGUNDA sessao antes de fechar esta.
+2026-09-20 21:00:43 [INFO] Dependencias verificadas: 10 binarios presentes.
+2026-09-20 21:00:43 [INFO] Iniciando ssh-audit-harden.sh v1.0.0 no modo apply.
+2026-09-20 21:00:43 [INFO] Configuracao efetiva lida com sshd -T.
+2026-09-20 21:00:43 [INFO] Auditoria concluida: nenhum achado.
+2026-09-20 21:00:44 [INFO] Configuracao ja esta na baseline. Nada a fazer (idempotente).
+2026-09-20 21:02:06 [ERROR] Parametro desconhecido: --parametro-invalido

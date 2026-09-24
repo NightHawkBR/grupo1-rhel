@@ -1,0 +1,23 @@
+● sshd.service - OpenSSH server daemon
+     Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-09-19 19:06:28 -03; 49min ago
+ Invocation: 93e086c9cb06473a9f8949fb6499a32c
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 10632 (sshd)
+      Tasks: 1 (limit: 10344)
+     Memory: 1.2M (peak: 4.2M)
+        CPU: 208ms
+     CGroup: /system.slice/sshd.service
+             └─10632 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+set 19 19:34:54 rhel-grupo1 sshd-session[10845]: Postponed publickey for nighthawk from 192.168.56.1 port 59796 ssh2 [preauth]
+set 19 19:35:01 rhel-grupo1 sshd-session[10845]: Accepted key ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ found at /home/nighthawk/.ssh/authorized_keys:1
+set 19 19:35:01 rhel-grupo1 sshd-session[10845]: Accepted publickey for nighthawk from 192.168.56.1 port 59796 ssh2: ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ
+set 19 19:35:01 rhel-grupo1 sshd-session[10845]: pam_unix(sshd:session): session opened for user nighthawk(uid=1000) by nighthawk(uid=0)
+set 19 19:35:01 rhel-grupo1 sshd-session[10845]: User child is on pid 10848
+set 19 19:35:02 rhel-grupo1 sshd-session[10845]: pam_unix(sshd:session): session closed for user nighthawk
+set 19 19:35:45 rhel-grupo1 sshd-session[10876]: main: SHA1 in signatures is disabled for RSA keys
+set 19 19:35:45 rhel-grupo1 sshd-session[10876]: Connection from 192.168.56.1 port 59803 on 192.168.56.103 port 6969 rdomain ""
+set 19 19:35:45 rhel-grupo1 sshd-session[10876]: Connection reset by authenticating user nighthawk 192.168.56.1 port 59803 [preauth]
+set 19 19:35:45 rhel-grupo1 sshd[10632]: srclimit_penalise: ipv4: new 192.168.56.1/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication

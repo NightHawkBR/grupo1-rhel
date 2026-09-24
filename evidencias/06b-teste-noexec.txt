@@ -1,0 +1,4 @@
+== execucao direta ==
+-bash: /tmp/teste.sh: Permissão negada
+==via interpretador ==
+executou

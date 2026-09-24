@@ -1,0 +1,5 @@
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                           
+udp   UNCONN 0      0          127.0.0.1:323       0.0.0.0:*    users:(("chronyd",pid=4008,fd=4))
+udp   UNCONN 0      0              [::1]:323          [::]:*    users:(("chronyd",pid=4008,fd=5))
+tcp   LISTEN 0      128          0.0.0.0:6969      0.0.0.0:*    users:(("sshd",pid=10632,fd=7))  
+tcp   LISTEN 0      128             [::]:6969         [::]:*    users:(("sshd",pid=10632,fd=8))  

@@ -1,0 +1,5 @@
+2026-09-20 21:11:56 [INFO] Dependencias verificadas: 10 binarios presentes.
+2026-09-20 21:11:56 [INFO] Iniciando ssh-audit-harden.sh v1.0.0 no modo rollback.
+2026-09-20 21:11:56 [INFO] Backup 20260920-210013 restaurado.
+2026-09-20 21:11:56 [INFO] sshd -t aprovou a configuracao.
+2026-09-20 21:11:56 [INFO] sshd recarregado. Sessoes abertas nao foram derrubadas.

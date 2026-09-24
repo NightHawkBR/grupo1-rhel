@@ -1,0 +1,47 @@
+set 19 19:06:28 rhel-grupo1 sshd[4039]: Received signal 15; terminating.
+set 19 19:06:28 rhel-grupo1 systemd[1]: Stopping sshd.service - OpenSSH server daemon...
+set 19 19:06:28 rhel-grupo1 systemd[1]: sshd.service: Deactivated successfully.
+set 19 19:06:28 rhel-grupo1 systemd[1]: Stopped sshd.service - OpenSSH server daemon.
+set 19 19:06:28 rhel-grupo1 systemd[1]: Starting sshd.service - OpenSSH server daemon...
+set 19 19:06:28 rhel-grupo1 sshd[10632]: Server listening on 0.0.0.0 port 6969.
+set 19 19:06:28 rhel-grupo1 sshd[10632]: Server listening on :: port 6969.
+set 19 19:06:28 rhel-grupo1 systemd[1]: Started sshd.service - OpenSSH server daemon.
+set 19 19:11:55 rhel-grupo1 sshd-session[10654]: main: SHA1 in signatures is disabled for RSA keys
+set 19 19:11:55 rhel-grupo1 sshd-session[10654]: Connection from 192.168.56.1 port 59733 on 192.168.56.103 port 6969 rdomain ""
+set 19 19:11:55 rhel-grupo1 sshd-session[10654]: Accepted key ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ found at /home/nighthawk/.ssh/authorized_keys:1
+set 19 19:11:55 rhel-grupo1 sshd-session[10654]: Postponed publickey for nighthawk from 192.168.56.1 port 59733 ssh2 [preauth]
+set 19 19:12:22 rhel-grupo1 sshd-session[10654]: Accepted key ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ found at /home/nighthawk/.ssh/authorized_keys:1
+set 19 19:12:22 rhel-grupo1 sshd-session[10654]: Accepted publickey for nighthawk from 192.168.56.1 port 59733 ssh2: ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ
+set 19 19:12:22 rhel-grupo1 sshd-session[10654]: pam_unix(sshd:session): session opened for user nighthawk(uid=1000) by nighthawk(uid=0)
+set 19 19:12:22 rhel-grupo1 sshd-session[10654]: User child is on pid 10668
+set 19 19:19:36 rhel-grupo1 sshd-session[10723]: main: SHA1 in signatures is disabled for RSA keys
+set 19 19:19:36 rhel-grupo1 sshd-session[10723]: Connection from 192.168.56.1 port 59751 on 192.168.56.103 port 6969 rdomain ""
+set 19 19:19:36 rhel-grupo1 sshd-session[10723]: Accepted key ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ found at /home/nighthawk/.ssh/authorized_keys:1
+set 19 19:19:36 rhel-grupo1 sshd-session[10723]: Postponed publickey for nighthawk from 192.168.56.1 port 59751 ssh2 [preauth]
+set 19 19:20:04 rhel-grupo1 sshd-session[10723]: Accepted key ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ found at /home/nighthawk/.ssh/authorized_keys:1
+set 19 19:20:04 rhel-grupo1 sshd-session[10723]: Accepted publickey for nighthawk from 192.168.56.1 port 59751 ssh2: ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ
+set 19 19:20:04 rhel-grupo1 sshd-session[10723]: pam_unix(sshd:session): session opened for user nighthawk(uid=1000) by nighthawk(uid=0)
+set 19 19:20:04 rhel-grupo1 sshd-session[10723]: User child is on pid 10726
+set 19 19:20:04 rhel-grupo1 sshd-session[10723]: pam_unix(sshd:session): session closed for user nighthawk
+set 19 19:20:29 rhel-grupo1 sshd-session[10754]: main: SHA1 in signatures is disabled for RSA keys
+set 19 19:20:29 rhel-grupo1 sshd-session[10754]: Connection from 192.168.56.1 port 59755 on 192.168.56.103 port 6969 rdomain ""
+set 19 19:20:29 rhel-grupo1 sshd-session[10754]: Connection reset by authenticating user nighthawk 192.168.56.1 port 59755 [preauth]
+set 19 19:20:29 rhel-grupo1 sshd[10632]: srclimit_penalise: ipv4: new 192.168.56.1/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+set 19 19:32:26 rhel-grupo1 sshd-session[10842]: main: SHA1 in signatures is disabled for RSA keys
+set 19 19:32:26 rhel-grupo1 sshd-session[10842]: Connection from 192.168.56.1 port 59788 on 192.168.56.103 port 6969 rdomain ""
+set 19 19:32:26 rhel-grupo1 sshd-session[10842]: User teste-negado from 192.168.56.1 not allowed because none of user's groups are listed in AllowGroups
+set 19 19:32:26 rhel-grupo1 sshd-session[10842]: Connection reset by invalid user teste-negado 192.168.56.1 port 59788 [preauth]
+set 19 19:32:26 rhel-grupo1 sshd[10632]: srclimit_penalise: ipv4: new 192.168.56.1/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication
+set 19 19:34:54 rhel-grupo1 sshd-session[10845]: main: SHA1 in signatures is disabled for RSA keys
+set 19 19:34:54 rhel-grupo1 sshd-session[10845]: Connection from 192.168.56.1 port 59796 on 192.168.56.103 port 6969 rdomain ""
+set 19 19:34:54 rhel-grupo1 sshd-session[10845]: Accepted key ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ found at /home/nighthawk/.ssh/authorized_keys:1
+set 19 19:34:54 rhel-grupo1 sshd-session[10845]: Postponed publickey for nighthawk from 192.168.56.1 port 59796 ssh2 [preauth]
+set 19 19:35:01 rhel-grupo1 sshd-session[10845]: Accepted key ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ found at /home/nighthawk/.ssh/authorized_keys:1
+set 19 19:35:01 rhel-grupo1 sshd-session[10845]: Accepted publickey for nighthawk from 192.168.56.1 port 59796 ssh2: ED25519 SHA256:fxF8Woge2AYDZB8ncGLEXXRCfD8vUYK9M85Szkp6DxQ
+set 19 19:35:01 rhel-grupo1 sshd-session[10845]: pam_unix(sshd:session): session opened for user nighthawk(uid=1000) by nighthawk(uid=0)
+set 19 19:35:01 rhel-grupo1 sshd-session[10845]: User child is on pid 10848
+set 19 19:35:02 rhel-grupo1 sshd-session[10845]: pam_unix(sshd:session): session closed for user nighthawk
+set 19 19:35:45 rhel-grupo1 sshd-session[10876]: main: SHA1 in signatures is disabled for RSA keys
+set 19 19:35:45 rhel-grupo1 sshd-session[10876]: Connection from 192.168.56.1 port 59803 on 192.168.56.103 port 6969 rdomain ""
+set 19 19:35:45 rhel-grupo1 sshd-session[10876]: Connection reset by authenticating user nighthawk 192.168.56.1 port 59803 [preauth]
+set 19 19:35:45 rhel-grupo1 sshd[10632]: srclimit_penalise: ipv4: new 192.168.56.1/32 deferred penalty of 1 seconds for penalty: connections without attempting authentication

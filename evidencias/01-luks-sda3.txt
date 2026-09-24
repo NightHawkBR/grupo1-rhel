@@ -1,0 +1,59 @@
+LUKS header information
+Version:       	2
+Epoch:         	5
+Metadata area: 	16384 [bytes]
+Keyslots area: 	16744448 [bytes]
+UUID:          	abd2ecaa-e5f8-4f26-a7da-149af42ec0cd
+Label:         	(no label)
+Subsystem:     	(no subsystem)
+Flags:       	allow-discards 
+
+Data segments:
+  0: crypt
+	offset: 16777216 [bytes]
+	length: (whole device)
+	cipher: aes-xts-plain64
+	sector: 512 [bytes]
+
+Keyslots:
+  0: luks2
+	Key:        512 bits
+	Priority:   normal
+	Cipher:     aes-xts-plain64
+	Cipher key: 512 bits
+	PBKDF:      argon2id
+	Time cost:  4
+	Memory:     142026
+	Threads:    1
+	Salt:       df 21 90 11 a2 84 30 89 2e d0 8d 7c b0 b6 d6 80 
+	            1f 0d 17 77 11 3e 27 f7 47 50 7c 06 f7 24 d7 b0 
+	AF stripes: 4000
+	AF hash:    sha256
+	Area offset:32768 [bytes]
+	Area length:258048 [bytes]
+	Digest ID:  0
+  1: luks2
+	Key:        512 bits
+	Priority:   normal
+	Cipher:     aes-xts-plain64
+	Cipher key: 512 bits
+	PBKDF:      argon2id
+	Time cost:  4
+	Memory:     198293
+	Threads:    1
+	Salt:       88 1c 05 47 aa 09 ad d7 17 24 68 e0 ed 72 bc e5 
+	            46 58 45 9a 50 50 56 5b 83 df 58 cc db 40 36 b7 
+	AF stripes: 4000
+	AF hash:    sha256
+	Area offset:290816 [bytes]
+	Area length:258048 [bytes]
+	Digest ID:  0
+Tokens:
+Digests:
+  0: pbkdf2
+	Hash:       sha256
+	Iterations: 293225
+	Salt:       62 32 19 e5 3e 41 81 20 fb 98 ba 4a 68 fb 96 24 
+	            a4 e5 a3 2a c3 ee c3 d6 85 0d c9 e0 8b e0 0b f0 
+	Digest:     39 e8 4a 0d a4 33 e8 09 12 fb 77 8f c4 58 76 c3 
+	            bf 3a 68 b9 87 0a a1 4c 89 1b 47 51 2d 93 60 d7 

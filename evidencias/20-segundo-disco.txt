@@ -1,0 +1,46 @@
+== lsblk ==
+NAME                                          MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINTS
+sda                                             8:0    0   60G  0 disk  
+├─sda1                                          8:1    0    1G  0 part  /boot/efi
+├─sda2                                          8:2    0    1G  0 part  /boot
+└─sda3                                          8:3    0   58G  0 part  
+  └─luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd 253:0    0   58G  0 crypt 
+    ├─vg_sistema-lv_root                      253:1    0   15G  0 lvm   /
+    ├─vg_sistema-lv_swap                      253:2    0    4G  0 lvm   [SWAP]
+    ├─vg_sistema-lv_tmp                       253:3    0    3G  0 lvm   /tmp
+    ├─vg_sistema-lv_home                      253:4    0   10G  0 lvm   /home
+    ├─vg_sistema-lv_vartmp                    253:5    0    3G  0 lvm   /var/tmp
+    ├─vg_sistema-lv_varlog                    253:6    0    5G  0 lvm   /var/log
+    └─vg_sistema-lv_var                       253:7    0    8G  0 lvm   /var
+sdb                                             8:16   0   20G  0 disk  
+└─cryptdados                                  253:8    0   20G  0 crypt 
+  └─vg_sistema-lv_dados                       253:9    0   13G  0 lvm   /srv/dados
+sr0                                            11:0    1 1024M  0 rom   
+
+== pvs ==
+  PV                                                    VG         Fmt  Attr PSize  PFree
+  /dev/mapper/cryptdados                                vg_sistema lvm2 a--  19,98g 6,98g
+  /dev/mapper/luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd vg_sistema lvm2 a--  57,98g 9,98g
+
+== vgs ==
+  VG         #PV #LV #SN Attr   VSize  VFree 
+  vg_sistema   2   8   0 wz--n- 77,96g 16,96g
+
+== lvs ==
+  LV        LSize  Devices                                                     
+  lv_dados  13,00g /dev/mapper/cryptdados(0)                                   
+  lv_home   10,00g /dev/mapper/luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd(1792) 
+  lv_root   15,00g /dev/mapper/luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd(6400) 
+  lv_swap    4,00g /dev/mapper/luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd(0)    
+  lv_tmp     3,00g /dev/mapper/luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd(1024) 
+  lv_var     8,00g /dev/mapper/luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd(10240)
+  lv_varlog  5,00g /dev/mapper/luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd(5120) 
+  lv_vartmp  3,00g /dev/mapper/luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd(4352) 
+
+== crypttab ==
+luks-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd UUID=abd2ecaa-e5f8-4f26-a7da-149af42ec0cd none discard,x-initrd.attach,link-volume-key=@u::%logon:kdump-cryptsetup:vk-abd2ecaa-e5f8-4f26-a7da-149af42ec0cd
+cryptdados UUID=8e95a0d1-08f3-428f-85b9-74587e303042 /etc/luks-keys/dados.key luks
+
+== df /srv/dados ==
+Sist. Arq.                       Tam. Usado Disp. Uso% Montado em
+/dev/mapper/vg_sistema-lv_dados   13G  287M   13G   3% /srv/dados
