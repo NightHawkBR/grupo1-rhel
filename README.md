@@ -1,7 +1,7 @@
 # Grupo 1 · Red Hat Enterprise Linux
 
 **CP02 — Ambiente Linux** · Sistemas Operacionais Linux · Cibersegurança · FIAP · 2026
-Turma **1TDCPF** · Professor: `<nome do professor>`
+Turma **1TDCPF** · Professor: Fábio Pires
 
 Instalação segura do **RHEL 10.2** em máquina virtual: particionamento com **LVM sobre LUKS2**, opções de montagem restritivas, segundo disco cifrado, **SSH endurecido** com a política de criptografia do sistema testada até o pós-quântico, e o script **`ssh-audit-harden.sh`** para auditar e corrigir a configuração do OpenSSH. Tudo com **SELinux em Enforcing do início ao fim**.
 
